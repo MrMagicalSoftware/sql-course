@@ -279,5 +279,24 @@ Il risultato sarebbe:
 Come si può vedere, l'ultimo dipendente Jane non ha un valore nella colonna DepName perché non appartiene a un dipartimento.
 
 
+# Left join Example 
+
+
+```
+
+select s.saleDate, s.amount, s.pid
+from sales s
+left join products pr on pr.pid = s.pid
+
+```
+
+
+
+
+
+
+
+
+
 
 
