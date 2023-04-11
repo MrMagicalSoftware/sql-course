@@ -374,5 +374,15 @@ Il comando qui sopra ci darà i risultati sotto forma di gruppi di paesi e il nu
 
 
 
+```
+select g.geo , sum(amount) , avg(amount) , sum(boxes)
+from sales s
+join geo g on s.geoID = g.geoID
+group by g.geo
+
+```
+
+
+
 
 
