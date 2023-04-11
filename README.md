@@ -103,6 +103,26 @@ select * from sales where amount > 10000 and saleDate >= '2022-01-01'
 
 ```
 
+Posso usare anche delle funzioni build in in sql che mi permettono ad esempio di estrarre
+la data .
+
+Es : la funzione year()
+
+```
+select * from sales where amount > 10000 and year(saleDate) = 2022
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
