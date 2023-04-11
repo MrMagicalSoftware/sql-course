@@ -126,6 +126,7 @@ select * from sales where boxes > 0 and boxes <=50
 select * from sales where boxes between 0 and 50
 ```
 
+Questo mi restituisce un errore :
 ![Schermata 2023-04-11 alle 11 26 21](https://user-images.githubusercontent.com/98833112/231116813-9cd49ae2-7aee-4c3c-bf04-f45ea6892540.png)
 
 
@@ -133,6 +134,11 @@ select * from sales where boxes between 0 and 50
 TIPS : backtic OPTION + 9
 
 
+```
+SELECT SaleDate, Amount, Boxes, weekday(SaleDate) as 'w'
+FROM sales
+where weekday(SaleDate) = 4
+```
 
 
 
