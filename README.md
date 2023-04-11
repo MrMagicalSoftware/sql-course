@@ -284,14 +284,19 @@ Come si può vedere, l'ultimo dipendente Jane non ha un valore nella colonna Dep
 
 ```
 
-select s.saleDate, s.amount, s.pid
+select s.saleDate, s.amount, pr.Product
 from sales s
 left join products pr on pr.pid = s.pid
 
 ```
 
 
+# Multiple Join
 
+select s.saleDate, s.amount, p.Salesperson ,p.team
+from sales s
+join people p on p.SPID = s.SPID
+join products pr on pr.PID = s.SPID
 
 
 
