@@ -211,4 +211,39 @@ join people p on p.SPID = s.SPID
 ```
 
 
+In SQL, il left join è un tipo di join che restituisce tutte le righe della tabella di sinistra (left table) e le righe corrispondenti della tabella di destra (right table). Se non ci sono corrispondenze nella tabella di destra, i valori dei campi di quella tabella saranno NULL nella riga risultante.
+
+La sintassi di un left join è la seguente:
+
+SELECT colonna1, colonna2, ...
+FROM tabella_sinistra
+LEFT JOIN tabella_destra
+ON condizione_di_corrispondenza;
+
+La condizione di corrispondenza è solitamente un'espressione booleana che stabilisce come le righe delle due tabelle devono essere abbinati.
+
+
+Supponiamo di avere due tabelle:
+
+Employee:
++----+------+-------+
+| ID | Name | DepId |
++----+------+-------+
+| 1  | John | 1     |
+| 2  | Bob  | 2     |
+| 3  | Jane | NULL  |
++----+------+-------+
+
+Department:
++-------+------------+
+| DepId | DepName    |
++-------+------------+
+| 1     | IT         |
+| 2     | Marketing  |
+| 3     | HR         |
++-------+------------+
+
+
+
+
 
