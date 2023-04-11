@@ -202,6 +202,13 @@ from sales;
 # Joins SQL 
 
 
+```
+
+select s.saleDate , s.amount, p.Salesperson
+from sales s 
+join people p on p.SPID = s.SPID
+
+```
 
 
 
