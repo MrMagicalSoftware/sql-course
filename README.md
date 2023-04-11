@@ -66,6 +66,27 @@ select SaleDate,Amout , Boxes , Amout/boxes 'NomeColonna' from sales
 
 ```
 
+# Clausula Where  Filtering:
 
+
+```
+select * from sales where amount > 10000
+
+```
+
+
+# Order by :
+
+Posso usare come ulteriori opzioni desc oppure asc
+
+```
+select * from sales where amount > 10000 ordber by amount desc
+
+```
+
+```
+select * from sales where amount > 10000 ordber by amount asc
+
+```
 
 
