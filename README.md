@@ -141,7 +141,7 @@ where weekday(SaleDate) = 4
 ```
 
 
-# USING MULTIPLE TABLES
+# More Example TABLES
 
 
 ```
@@ -180,6 +180,28 @@ Contiene una lettera B
 select * from people where salesperson like '%B%'
 
 ```
+
+
+# Case Operator 
+
+```
+select SaleDate, Amount ,
+     case when amount < 1000 then 'Under 1k'
+          when amount < 5000 then 'Under 5k'
+          when amount < 10000 then 'under 10k'
+         
+          else  '10k or more'
+     end as 'Amount Category'
+ 
+from sales;
+```
+
+
+
+
+# Joins SQL 
+
+
 
 
 
