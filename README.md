@@ -344,7 +344,32 @@ group by geoID
 ![Schermata 2023-04-11 alle 13 16 24](https://user-images.githubusercontent.com/98833112/231144566-2cc444ac-6a31-44be-8a02-d3362b277e16.png)
 
 
+La clausola GROUP BY in SQL viene utilizzata per raggruppare le righe di una tabella in base ai valori in una o più colonne. In altre parole, viene usata per creare un insieme di risultati unico per ogni combinazione di valori dell'attributo specificato nella clausola.
 
+La sintassi di base della clausola GROUP BY è la seguente:
+
+<pre>
+SELECT colonna1, colonna2, aggregazione(colonnaN)
+FROM nome_tabella
+GROUP BY colonna1, colonna2
+</pre>
+
+Dove:
+
+    colonna1, colonna2, …, colonnaN sono le colonne che vogliamo usare per raggruppare i dati.
+    aggregazione(colonnaN) è un'operazione aggregata, come COUNT, SUM, AVG, MIN e MAX, che viene applicata alla colonna in questione.
+
+Ad esempio, se abbiamo una tabella clienti con i campi id, nome, cognome e paese, e vogliamo contare il numero di clienti per ogni paese, possiamo utilizzare la clausola GROUP BY in questo modo:
+
+<pre>
+
+SELECT paese, COUNT(*) as numero_clienti
+FROM clienti
+GROUP BY paese
+</pre>
+
+
+Il comando qui sopra ci darà i risultati sotto forma di gruppi di paesi e il numero di clienti di ogni paese.
 
 
 
