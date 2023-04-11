@@ -15,4 +15,22 @@ Per visionare cosa è disponile in una particolare tabella si può usare :
 ```
  desc sales
 ```
+
 ![Schermata 2023-04-11 alle 10 56 30](https://user-images.githubusercontent.com/98833112/231109103-55590566-aa1d-4da3-8087-8291bfc3e4c8.png)
+
+
+
+Comando di Select 
+
+```
+select * from sales
+```
+![Schermata 2023-04-11 alle 11 00 42](https://user-images.githubusercontent.com/98833112/231110460-147b3eee-82ce-4468-b260-a990834f9661.png)
+
+
+
+
+
+
+
+
