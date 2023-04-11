@@ -39,7 +39,17 @@ select SaleDate,Amout from sales
 ```
 
 
+#Sql Calculations :
 
+Posso fare anche dei calcoli in sql , usando 
+
+```
+select SaleDate,Amout , Boxes , Amout/boxes from sales
+
+```
+
+
+![Schermata 2023-04-11 alle 11 06 18](https://user-images.githubusercontent.com/98833112/231111854-4a5efb7d-aac5-4808-9f73-80f7ba1219ab.png)
 
 
 
