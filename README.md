@@ -292,11 +292,51 @@ left join products pr on pr.pid = s.pid
 
 
 # Multiple Join
-
+```
 select s.saleDate, s.amount, p.Salesperson ,p.team
 from sales s
 join people p on p.SPID = s.SPID
 join products pr on pr.PID = s.SPID
+```
+
+
+# Conditions with Joins
+
+```
+select s.saleDate, s.amount, p.Salesperson ,p.team
+from sales s
+join people p on p.SPID = s.SPID
+join products pr on pr.PID = s.SPID
+where s.amount < 500 and p.Team='Delish';
+```
+
+```
+select s.saleDate, s.amount, p.Salesperson ,p.team
+from sales s
+join people p on p.SPID = s.SPID
+join products pr on pr.PID = s.SPID
+where s.amount < 500 and p.Team='';
+```
+
+
+```
+select s.saleDate, s.amount, p.Salesperson ,p.team
+from sales s
+join people p on p.SPID = s.SPID
+join products pr on pr.PID = s.SPID
+joint geo g on g.geoid = s.geoid
+where s.amount < 500 and p.Team='' and g.geo in ('New Zealand' ,'India')
+order by saleDate;
+```
+
+
+#Using group by
+
+
+
+
+
+
 
 
 
