@@ -330,12 +330,18 @@ order by saleDate;
 ```
 
 
-#Using group by
+# Using group by
+
+```
+select geoID , sum(amount)
+from sales
+group by geoID
+
+```
 
 
 
-
-
+![Schermata 2023-04-11 alle 13 16 24](https://user-images.githubusercontent.com/98833112/231144566-2cc444ac-6a31-44be-8a02-d3362b277e16.png)
 
 
 
