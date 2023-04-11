@@ -109,16 +109,24 @@ la data .
 Es : la funzione year()
 
 ```
-select * from sales where amount > 10000 and year(saleDate) = 2022
+select * from sales where amount > 10000 and year(saleDate) = 2022 order by amount
 ```
 
 
+# Between condition :
 
 
+```
+select * from sales where boxes > 0 and boxes <=50
+
+```
 
 
+```
+select * from sales where boxes between 0 and 50
+```
 
-
+![Schermata 2023-04-11 alle 11 26 21](https://user-images.githubusercontent.com/98833112/231116813-9cd49ae2-7aee-4c3c-bf04-f45ea6892540.png)
 
 
 
