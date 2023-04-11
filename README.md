@@ -398,5 +398,21 @@ order by  pr.category , p.team;
 ```
 
 
+# Total amotnts by top 10 products  LIMIT OPERATOR:
+
+```
+select pr.Product , sum(s.amount) as 'Total Amount'
+from sales s
+join products pr on pr.pid = s.pid
+groyp by pr.Product
+order by `Total Amount` desc
+limit 10;
+
+
+
+```
+
+
+
 
 
