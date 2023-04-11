@@ -90,3 +90,11 @@ select * from sales where amount > 10000 ordber by amount asc
 ```
 
 
+![Schermata 2023-04-11 alle 11 14 51](https://user-images.githubusercontent.com/98833112/231114065-aefdf1d4-91fa-4445-bd25-16fbb0f71f70.png)
+
+
+
+
+
+
+
