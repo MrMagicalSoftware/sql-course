@@ -52,6 +52,19 @@ select SaleDate,Amout , Boxes , Amout/boxes from sales
 ![Schermata 2023-04-11 alle 11 06 18](https://user-images.githubusercontent.com/98833112/231111854-4a5efb7d-aac5-4808-9f73-80f7ba1219ab.png)
 
 
+Se volessi dare un nome alla colonna ho 2 diverse alternative 
+
+
+```
+select SaleDate,Amout , Boxes , Amout/boxes as 'NomeColonna' from sales
+
+```
+
+
+```
+select SaleDate,Amout , Boxes , Amout/boxes 'NomeColonna' from sales
+
+```
 
 
 
