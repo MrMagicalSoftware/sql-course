@@ -225,6 +225,8 @@ La condizione di corrispondenza è solitamente un'espressione booleana che stabi
 
 Supponiamo di avere due tabelle:
 
+
+<pre>
 Employee:
 +----+------+-------+
 | ID | Name | DepId |
@@ -243,7 +245,7 @@ Department:
 | 3     | HR         |
 +-------+------------+
 
-
+</pre>
 
 
 
