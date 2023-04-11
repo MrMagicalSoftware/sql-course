@@ -253,10 +253,13 @@ Department:
 
 Se volessimo ottenere tutti i dipendenti e il nome del loro dipartimento, incluso quelli che non appartengono ad alcun dipartimento, potremmo usare un left join:
 
+```
 SELECT Employee.Name, Department.DepName
 FROM Employee
 LEFT JOIN Department
 ON Employee.DepId = Department.DepId;
+```
+
 
 Il risultato sarebbe:
 
@@ -270,9 +273,10 @@ Il risultato sarebbe:
 | Jane | NULL       |
 +------+------------+
 
-Come si può vedere, l'ultimo dipendente Jane non ha un valore nella colonna DepName perché non appartiene a un dipartimento.
 
 </pre>
+
+Come si può vedere, l'ultimo dipendente Jane non ha un valore nella colonna DepName perché non appartiene a un dipartimento.
 
 
 
