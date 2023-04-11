@@ -28,6 +28,18 @@ select * from sales
 ![Schermata 2023-04-11 alle 11 00 42](https://user-images.githubusercontent.com/98833112/231110460-147b3eee-82ce-4468-b260-a990834f9661.png)
 
 
+tips :
+
+Meglio scrivere select from sales,
+e poi usare l'autocompletamento per farsi suggerire le colonne ecc..
+
+```
+select SaleDate,Amout from sales
+
+```
+
+
+
 
 
 
