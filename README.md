@@ -141,4 +141,45 @@ where weekday(SaleDate) = 4
 ```
 
 
+# USING MULTIPLE TABLES
+
+
+```
+select * from people;
+
+```
+
+
+```
+select * from people where team='Delish' or team='Jucies';
+
+```
+
+# in clause
+
+Posso usare in clause che mi riduce la scrittura dell'or
+
+```
+select * from people where team in ('Delish', 'Jucies');
+
+```
+
+
+# Pattern Matching :
+
+
+```
+select * from people where salesperson like 'B%'
+
+```
+
+Contiene una lettera B
+
+
+```
+select * from people where salesperson like '%B%'
+
+```
+
+
 
