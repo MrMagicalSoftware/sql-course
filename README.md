@@ -388,6 +388,7 @@ select pr.category , p.team , sum(boxes) , sum(amount)
 from sales s
 join people p on p.spid = s.spid
 join products pr on p.pid = s.pid
+where p.team <> ''
 group by pr.category , p.team
 order by  pr.category , p.team;
 
