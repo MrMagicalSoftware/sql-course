@@ -39,7 +39,7 @@ select SaleDate,Amout from sales
 ```
 
 
-#Sql Calculations :
+# Sql Calculations :
 
 Posso fare anche dei calcoli in sql , usando 
 
