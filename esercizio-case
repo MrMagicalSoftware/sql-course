@@ -13,3 +13,32 @@ WHEN bool = true THEN 'Yes'
 ELSE 'No'
 END as res
 from booltoword
+
+
+
+-- # write your SQL statement
+--here: you are given a table 'quarterof' with column 'month', 
+--return a table with column 'month' and your result in a column named 'res'.
+
+
+select month,
+
+CASE 
+WHEN month =1  then 'January'
+WHEN month =2  then 'February'
+WHEN month =3  then 'March'
+WHEN month =4  then 'April'
+WHEN month =5  then 'May'
+WHEN month =6  then 'June'
+WHEN month =7  then 'July'
+WHEN month =8  then 'August'
+WHEN month =9  then 'September'
+WHEN month =10 then 'October'
+WHEN month =11 then 'November'
+WHEN month =12 then 'December'
+END as res
+
+from quarterof
+
+
+
