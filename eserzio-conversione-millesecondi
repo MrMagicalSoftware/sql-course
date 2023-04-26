@@ -19,3 +19,7 @@ Input constraints:
 
 select (s * 1000) + ( m * 60  * 1000) + (h * 60  * 60  * 1000) as "res"
 from past
+
+
+select (3600*h + 60*m + s)*1000 as res
+from past;
