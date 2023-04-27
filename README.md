@@ -3,6 +3,11 @@
 
 ## Font piu' piccolo
 
+```
+select * from prova;
+```
+
+
 
 # sql-course
 
